@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding:0;
+    font-size: 1.1em;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100vw;
+    background-color: #FFCA28;
+    background-image: -webkit-linear-gradient(80deg, RGB(181, 101, 167) 50%, transparent 50%),
+    -webkit-linear-gradient(150deg, RGB(221, 65, 36) 30%, transparent 30%);
+    background-image: -o-linear-gradient(80deg, RGB(181, 101, 167) 50%, transparent 50%),
+    -o-linear-gradient(150deg, RGB(221, 65, 36) 30%, transparent 30%);
+    background-image: linear-gradient(10deg, RGB(181, 101, 167) 50%, transparent 50%),
+    linear-gradient(-60deg, RGB(221, 65, 36) 30%, transparent 30%);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+.cd {
+    width: 40vw;
+    height: 100px;
+    background-color: rgb(243, 215, 215);
+    border-radius: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    -webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    -o-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    padding: 10px;
+    text-shadow: 5px 5px 12px rgba(150, 150, 150, 1);
+}
+
+.short-text {
+    display: none;
+}
+.full-text {
+    display: inline-block;
+}
+
+.cd:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+@media (max-width: 770px) {
+    .cd {
+        border-radius: 5px;
+    }
+    .short-text {
+        display: inline-block;
+    }
+    .full-text {
+        display: none;
+    }
+}

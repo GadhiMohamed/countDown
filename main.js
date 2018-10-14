@@ -17,7 +17,7 @@ let counter = function () {
             dsec = "0" + dsec;
         }
         seconds -= 1;
-        ft.innerHTML = `Time is : ${dmin} minutes and ${dsec} seconds`;
+        ft.innerHTML = `Time is : ${dmin} minute(s) and ${dsec} seconds`;
         st.innerHTML = `${dmin}: ${dsec} `;
     } else {
         watch.innerHTML = 'Done';

@@ -1,7 +1,7 @@
 let watch = document.querySelector('.cd'),
     ft = document.querySelector('.full-text'),
     st = document.querySelector('.short-text'),
-    seconds = 15;
+    seconds = 75;
 
 
 let count = setInterval(() => counter(), 1000);

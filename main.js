@@ -13,7 +13,7 @@ let counter = function () {
 
 
     if (seconds > 0) {
-        if (seconds < 10) {
+        if (dsec < 10) {
             dsec = "0" + dsec;
         }
         seconds -= 1;
